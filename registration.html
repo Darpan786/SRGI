@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        font-family: "Source Sans Pro", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .not-valid {
+        background-color: #de606030;
+      }
+      #info {
+        font-weight: bold;
+        color: red;
+      }
+      form div {
+        text-align: left;
+        margin: 5px 3px;
+        font-size: 22px;
+      }
+
+      body {
+        background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+      }
+
+      input[type="radio"] {
+        margin: 4px 0px 20px -105px;
+      }
+
+      .gend {
+        display: flex;
+        margin-left: 64px;
+      }
+
+      .dgend {
+        text-align: center;
+        margin: -5px 56px 5px 4px;
+      }
+
+      input[type="date"] {
+        font-size: 16px;
+        color: #252e387a;
+      }
+
+      input::placeholder {
+        font-size: 16px;
+        color: #252e387a;
+      }
+
+      form {
+        position: relative;
+        width: 365px;
+        height: 100%;
+        margin: 50px auto 100px;
+        text-align: center;
+        background: #eeeeef;
+        padding: 40px;
+        -webkit-border-radius: 40px 0 0 0;
+        -moz-border-radius: 40px 0 0 0;
+        border-radius: 50px 7px 50px 7px;
+        box-shadow: -9px -11px 0px 2px #eef1fb38,
+          inset 10px 7px 0px 0px #a3a7b1f2;
+      }
+
+      h4 {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 2em;
+        font-weight: 300;
+        margin: -24px 13px 12px 12px;
+        color: #7f8c8d;
+        text-shadow: 1px 1px 0px white;
+      }
+
+      input {
+        display: block;
+        width: 315px;
+        padding: 14px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        border: 0;
+        margin-bottom: 20px;
+        color: #7f8c8d;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      input:focus {
+        background: #fafafa;
+      }
+
+      .button {
+        position: relative;
+        float: left;
+        width: 145px;
+        margin-top: 10px;
+        background: #507492;
+        color: #fff;
+        font-weight: 400;
+        text-shadow: 1px 1px 0px #2d7baf;
+        box-shadow: -7px -6px 0px #9c9c9cc4;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        outline: none;
+      }
+      input {
+        display: block;
+        width: 315px;
+        padding: 14px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        border: 0;
+        margin-bottom: 20px;
+        color: #7f8c8d;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      .button:hover {
+        background-color: #3a5e7bdb;
+        border-bottom-right-radius: 32%;
+        border-bottom-left-radius: 32%;
+      }
+
+      input [type="checkbox"] {
+        width: 10px;
+      }
+
+      .button {
+        cursor: pointer;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post" name="main_form">
+      <h4>Registration info</h4>
+      <div><label for="username">Name</label></div>
+      <input
+        name="name"
+        id="username"
+        type="text"
+        placeholder="Enter name"
+        maxlength="50"
+        pattern="[A-Za-z]{1,50}"
+        title="Name can not contain numbers"
+      />
+      <div><label for="userLastname">Lastname</label></div>
+      <input
+        name="lastname"
+        id="userLastname"
+        type="text"
+        placeholder="Enter lastname"
+        pattern="[A-Za-z]{1,50}"
+        maxlength="50"
+        title="Lastname can not contain numbers"
+      />
+      <div class="dgend">Gender</div>
+      <span class="gend">
+        M<input
+          type="radio"
+          name="gender"
+          value="M"
+          id="male"
+          checked="checked"
+        />
+        F<input type="radio" name="gender" value="F" id="female" />
+      </span>
+      <div><label for="userbday">Birthday</label></div>
+      <input
+        type="date"
+        name="birthday"
+        id="userbday"
+        min="1899-01-01"
+        title="Wrong min date"
+      />
+      <div><label for="useremail">Email Address</label></div>
+      <input
+        name="email"
+        id="useremail"
+        type="email"
+        placeholder="Enter email"
+        maxlength="50"
+      />
+      <div><label for="userPass">Password</label></div>
+      <input
+        name="password"
+        id="userPass"
+        type="password"
+        placeholder="Enter password"
+        maxlength="20"
+        pattern=".{6,20}"
+        title="6 to 20 characters"
+      />
+      <div><label for="userConfirmPass">Confirm password</label></div>
+      <input
+        name="confirmPassword"
+        id="userConfirmPass"
+        type="password"
+        placeholder="Confirm password"
+        maxlength="20"
+        pattern=".{6,20}"
+        title="6 to 20 characters"
+      />
+      <span id="info"></span>
+      <div><label for="ava">Avatar</label></div>
+      <input
+        type="file"
+        id="ava"
+        type="file"
+        name="myImage"
+        accept="image/x-png,image/gif,image/jpeg"
+        title="Choose avatar"
+      />
+      <input class="button" type="submit" value="Send" name="submit" />
+    </form>
+    <script>
+      window.onload = function () {
+        let form = document.main_form;
+        let info = document.getElementById("info");
+        let name = form.name;
+        let lastname = form.lastname;
+        let surname = form.surname;
+        let gender = form.gender;
+        let date = form.birthday;
+        let email = form.email;
+        let password = form.password;
+        let confirmPassword = form.confirmPassword;
+
+        form.addEventListener("submit", formValidation);
+        function formValidation() {
+          let wrongFields = false;
+          for (let i = 0; i < form.length; i++) {
+            if (form[i].value == "" && form[i].type != "radio") {
+              form[i].classList.add("not-valid");
+              wrongFields = true;
+            } else form[i].classList.remove("not-valid");
+          }
+          if (form.password.value != form.confirmPassword.value) {
+            info.innerHTML = "Passwords is not same";
+            event.preventDefault();
+          } else info.innerHTML = "";
+          if (!wrongFields) alert("Thanks for registration");
+          else event.preventDefault();
+        }
+        for (let i = 0; i < form.length; i++) {
+          form[i].onchange = function () {
+            if (this.value != "") this.classList.remove("not-valid");
+          };
+        }
+      };
+    </script>
+  </body>
+</html>

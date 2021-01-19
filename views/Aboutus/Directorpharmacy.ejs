@@ -1,0 +1,117 @@
+<%- include("../partials/header"); -%>
+<br />
+<br />
+<br />
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Add a gray background color with some padding */
+      body {
+        font-family: Arial;
+        padding: 20px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 200px;
+        padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>DIRECTOR (PHARMACY)’S MESSAGE</h2>
+          <!-- <h5>Title description, Dec 7, 2017</h5> -->
+          <div class="fakeimg" style="height: 200px;">Image</div>
+          <p>
+            The College of Pharmacy, located within SRGI premises and
+            established with a mission to prepare trained manpower in the field
+            of Pharmacy, aims at enhancing the prestige that SRGI has earned
+            over the years. Today, the profession of Pharmacy has expanded
+            immensely and there are a lot of opportunities in Clinical Research,
+            Nanotechnology, Molecular Biology, Phytochemistry and so on. The
+            discipline has grown tremendously and recent advances in technology
+            have created a lot of job opportunities in the field.
+          </p>
+          <br />
+          <br />
+          <br />
+          <p>
+            The college has well-equipped laboratories and excellent
+            infrastructure to make the students acquire knowledge that would
+            help them to face the competitive world. National Seminars,
+            Workshops and Industrial Visits are conducted in the college at
+            regular intervals which enable the students to gain new knowledge.
+            The institute also focuses on personality development, confidence
+            building, research exposure and enhancement of communication skills.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<%- include("../partials/footer"); -%>

@@ -1,0 +1,149 @@
+<%- include("../partials/header"); -%>
+<br />
+<br />
+<br />
+<br />
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Add a gray background color with some padding */
+      body {
+        font-family: Arial;
+        padding: 20px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        width: 100%;
+        padding: 20px;
+        background-image: url(https://srgi.ac.in/wp-content/uploads/2018/06/WORKSHOP-1024x437.jpg);
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>LEGENDARY TALKS</h2>
+          <!-- <h5>Title description, Dec 7, 2017</h5> -->
+          <div class="fakeimg" style="height: 350px;"></div>
+          <br />
+
+          <br />
+          <ul>
+            <li>
+              <strong>“Mission Communication Technology”</strong><br />
+              ——Dr. S.P. Kosta Ex- Director, ISRO, Bengaluru
+            </li>
+            <br />
+            <li>
+              <strong> “Effective Teaching Methodology” </strong><br />——Porf.
+              G.L. Datta, Chancellor, K.L. University Vaddeswaram, Guntur
+            </li>
+            <br />
+            <li>
+              <strong>“Designing with computer-concept and Application”</strong
+              ><br />——Dr. S.K. Gamasta, Director NRITM, Gwalior
+            </li>
+            <br />
+            <li>
+              <strong>“Presentation on CADD and darfting”</strong><br />——Mr.
+              Neeraj Kumar, CAD Desk, Jaipur
+            </li>
+            <br />
+            <li>
+              <strong>
+                “Programming concept as per industry requirement” </strong
+              ><br />——Er. Shyamendra Shah, HCL
+            </li>
+            <br />
+            <li>
+              <strong> “Microsoft technology for Local Area Networking” </strong
+              ><br />——Er. Deepak Bagora, HCL
+            </li>
+            <br />
+            <li>
+              <strong> “Features of Read hat technologies” </strong><br />——Er.
+              Aditya Ranjan, Red hat
+            </li>
+            <br />
+            <li>
+              <strong> “MATLAB & Digital Image Processing” </strong><br />——Er.
+              Abhishek Kumar Tripathi, IIT, Kharagpur
+            </li>
+            <br />
+            <li>
+              <strong>
+                “Electromagnetic Field Theory-Concept & Application” </strong
+              ><br />——Porf. Rajeev Gupta, MNIT, Allahabad
+            </li>
+            <br />
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<%- include("../partials/footer"); -%>

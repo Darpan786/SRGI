@@ -1,0 +1,141 @@
+<%- include("../partials/header"); -%>
+<br />
+<br />
+<br />
+<br />
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Add a gray background color with some padding */
+      body {
+        font-family: Arial;
+        padding: 20px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        width: 414px;
+        padding: 20px;
+        background-image: url(https://srgi.ac.in/wp-content/uploads/2018/06/img-frame.png);
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>SRGI OVERVIEW</h2>
+          <!-- <h5>Title description, Dec 7, 2017</h5> -->
+          <div class="fakeimg" style="height: 350px;"></div>
+          <p>
+            <strong>SR Group of Institutions,</strong>
+            established in 2002, is an embodiment of advancement in the sphere
+            of engineering education. The institute is approved by All India
+            Council of Technical Education and affiliated to Dr. A.P.J. Abdul
+            Kalam Technical University (formerly, Uttar Pradesh Technical
+            University).
+          </p>
+          <p>
+            The group offers various courses like B. Tech (CS, EC,EE, ME & CE),
+            B. Pharm, B.Sc. (Hons) Bio-Tech,, BBA, BCA, B.A. Journalism, B.Sc
+            (H) Food Technology, B.Sc Agriculture, MBA (Dual MBA), MCA, M. Tech
+            (CS, EC, ME & CE) & Polytechnic(EE, EC, ME & CE). SRGI is currently
+            running five colleges, College of Science & Engineering, College of
+            Pharmacy, College of Engineering Management & Technology, College of
+            Professional Studies, SR College of Polytechniq. All the colleges
+            are well developed with modern infrastructure and advanced
+            laboratories and workshops.
+          </p>
+          <p>
+            The campus is an inspirational place to study, where students are
+            encouraged and supported to reach their highest possible potential
+            through the rich curriculum designed to suit their aspirations and
+            strengths. We maintain a high standard of education and continuously
+            strive to create an ambience for learning in order to promote great
+            career. We believe in the process of reshaping the attitude of
+            students and giving them the opportunity to explore and rediscover
+            themselves.
+          </p>
+          <br />
+          <br />
+          <br />
+          <p>
+            We are dedicated to provide state-of-the-art education to enable
+            students to work on teams and have interdisciplinary knowledge,
+            which will cater to industry and social needs. We attempt to provide
+            an imaginative and innovative ethos that combines sound business
+            principles with instinctive commercial drive. Our courses offer
+            students a life changing experience, preparing them to succeed in
+            the ever changing global business arena. As a holistic approach,
+            SRGI students learn to work under highly demanding schedules and
+            perform in the most inspiring way.Your journey starts when you apply
+            for admission and gains momentum as you enroll with the SRGI group.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<%- include("../partials/footer"); -%>

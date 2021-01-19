@@ -1,0 +1,129 @@
+<%- include("../partials/header"); -%>
+<br />
+<br />
+<br />
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Add a gray background color with some padding */
+      body {
+        font-family: Arial;
+        padding: 20px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 200px;
+        padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>GROUP DIRECTOR'S MESSAGE</h2>
+          <!-- <h5>Title description, Dec 7, 2017</h5> -->
+          <div class="fakeimg" style="height: 200px;">Image</div>
+          <p>
+            <strong
+              >विघा ददाति विनयम विनयाघाती पात्रताम| पात्रत्वाद्धनमाप्नोति
+              धनाद्धर्म तत: सुखम |</strong
+            >
+            It gives me immense pleasure in welcoming you to SR Group of
+            Institutions, Jhansi, which not only provides you with opportunities
+            to expose your talents but also gives you a conducive environment to
+            develop your personality.
+          </p>
+          <p>
+            The institution has come a long way since its inception in the year
+            2002. It has a glorious standing of 15 years now—8 years as College
+            of Science & Engineering, Jhansi & 7 years as SRGI, Technical
+            Campus. It is always dedicated and determined to flourish and
+            blossom its students with advanced technological aspects in their
+            respective field by providing them state-of-the-art laboratories to
+            convert their obtained theoretical concepts from their research
+            oriented faculty into experimental outcomes. Our motive is to not
+            only prepare our students as technocrats but to make them ideal
+            people who can serve the society and the nation with utmost
+            regularity and responsibility.
+          </p>
+          <p>
+            Today, SRGI has 14 academic departments and four centres of
+            excellence like Computer Centre, Central Library & R&D Cell & MTLC
+            Centre. The 14 undergraduate courses include Engineering, Computer
+            Application, Pharmacy, Agriculture, Biotechnology, Business
+            Administration, Food Technology, Journalism & Mass Communication &
+            six post-graduate programs for regular M. Tech, MBA & MCA. Besides
+            academics, it takes keen interest in giving the students hand-on
+            experience of industries through industrial visits and international
+            trips.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<%- include("../partials/footer"); -%>

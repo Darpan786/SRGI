@@ -1,0 +1,137 @@
+<%- include("../partials/header"); -%>
+<html>
+<head>
+<style>
+h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.speak-container{
+	height: 1250px;
+	padding-top: 60px;
+	width: 100%;
+	background: linear-gradient(pink,pink);
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.speak-heading  h1{
+	color: white;
+	text-align: center;
+}
+.speak-heading .hr-heading{
+	text-align: center;
+	color: #fff;
+	width: 1200px;
+}
+.speak-row{
+	height: 550px;
+	width: 80%;
+	margin-left: 10%;
+	display: inline-flex;
+}
+.speak-box{
+	position: relative;
+	width: 1000px;
+	height: 300px;
+	margin-left: 20px;
+	margin-top: 80px;
+	box-shadow: 0 30px 30px rgba(0,0,0,.5);
+}
+.speak-box .speak-imgBx{
+	position: absolute;
+        margin-left:200px;
+        margin-top:20px;
+	width: 50%;
+	height: 100%;
+}
+.speak-box .speak-imgBx img{
+	position: absolute;
+	width: 50%;
+	height: 70%;
+	object-fit: cover;
+	transition: 0.5s;
+}
+.speak-box:hover .speak-imgBx img{
+	opacity: 0;
+	box-shadow: 0 30px 30px rgba(0,0,0,.5);
+}
+.speak-box .speak-content{
+	position: absolute;
+	bottom: 20px;
+	left: 10%;
+	width: 80%;
+	height: 60px;
+	background: linear-gradient(black,#fff);
+	transition: 0.5s;
+	overflow: hidden;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.speak-box:hover .speak-content{
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(pink,purple);
+}
+.speak-box .speak-content h3{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+.speak-box .speak-content p{
+	margin: 10px 0 0;
+	padding: 0;
+	opacity: 0;
+	line-height: 1.2em;
+	transition: 0.5s;
+	text-align: justify;
+}
+.speak-box:hover .speak-content p{
+	opacity: .5;
+	transition-delay: 0.5s;
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center;">ALUMNI CONTACT</h1>
+<div class="speak-box">
+		<div class="speak-imgBx">
+			<a name="na-names"></a>
+			<img src="https://srgi.ac.in/wp-content/uploads/2018/06/JMK-2.png" height="30px" width="30px">
+		</div>
+		<div class="speak-content">
+			<h3>Mr. Irfan Khan<br>Engineer � BEL (Bharat Electronics Limited)</br>New Delhi</h3>
+			<p><strong>A strong structure can only be built on a strong foundation. My years in SRGI helped carving my foundation and thus I am, and I will always stand the test of time.<strong></p>
+		</div>
+              
+	</div>
+<div class="speak-box">
+		<div class="speak-imgBx">
+			<a name="na-names"></a>
+			<img src="https://srgi.ac.in/wp-content/uploads/2018/06/JMK-3.jpg" height="30px" width="30px">
+		</div>
+		<div class="speak-content">
+			<h3>Mr. Tarun Nayak<br>Man Diesel & Turbo SE</br>Bangalore</h3>
+			<p><strong>SRGI is a pool of opportunities. It gave us good exposure and has definitely helped us to move forward in the right direction.</strong></p>
+		</div>
+              
+	</div>
+<div class="speak-box">
+		<div class="speak-imgBx">
+			<a name="na-names"></a>
+			<img src="https://srgi.ac.in/wp-content/uploads/2018/06/JMK.png" height="30px" width="30px">
+		</div>
+		<div class="speak-content">
+			<h3>Mr. Jeetendra Mohan Khare<br>HOD-ME (SRGI)</br></h3>
+			<p><strong>Education is what transforms the life from dull lead to dazzling gold which not only shines in itself but brightens the beholder too.
+                             A successful MBA experience is not necessarily equated to the syllabus; it is the holistic exposure.</strong></p>
+		</div>
+              
+	</div>
+
+</body>
+
+</html>
+<%- include("../partials/footer"); -%>

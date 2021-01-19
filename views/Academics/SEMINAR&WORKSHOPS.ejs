@@ -1,0 +1,155 @@
+<%- include("../partials/header"); -%>
+<br />
+<br />
+<br />
+<br />
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Add a gray background color with some padding */
+      body {
+        font-family: Arial;
+        padding: 20px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        width: 100%;
+        padding: 20px;
+        background-image: url(https://srgi.ac.in/wp-content/uploads/2018/06/WORKSHOP-1024x437.jpg);
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>SEMINAR & WORKSHOPS</h2>
+          <!-- <h5>Title description, Dec 7, 2017</h5> -->
+          <div class="fakeimg" style="height: 350px;"></div>
+          <br />
+          <br />
+          <p>
+            It has been a tradition with the various departments of S R Group of
+            Institutions to hold and organize International and National
+            Conferences and Seminars as well as Workshops and Lecture Series
+            mainly for the benefit of our students and members of faculty. These
+            meets are attended by eminent scientists, academicians and
+            professionals from major industries who share their research and
+            professional experiences.
+          </p>
+          <br />
+          <br />
+          <h2>
+            Recent Workshop and Seminars:
+          </h2>
+          <br />
+          <ol>
+            <li>
+              <strong
+                >Workshop on Ethical Hacking and Information Security</strong
+              >
+            </li>
+            <li>
+              <strong>
+                A three days workshop on “ EMPLOY-ABILITY SKILLS “ was organized
+                by SRGI in collaboration with AIMA
+              </strong>
+            </li>
+            <li>
+              <strong
+                >DoMs, SRGI Organized National Seminar on Impact of
+                Demonetization on Indian Economy</strong
+              >
+            </li>
+            <li>
+              <strong
+                >A National Seminar on “Emerging trends in agriculture and
+                Biotechnology” conducted on 24th March 2017</strong
+              >
+            </li>
+            <li>
+              <strong>
+                A one day workshop on “MATLAB” was organized by SRGI in
+                collaboration with IQRA
+              </strong>
+            </li>
+            <li>
+              <strong>
+                Workshop on “Auto CADD’” held in SRGI 30th September 2016
+              </strong>
+            </li>
+            <li>
+              <strong>
+                DoMs, SRGI Organized Corporate Executive Lecture Series-III
+              </strong>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<%- include("../partials/footer"); -%>

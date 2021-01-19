@@ -1,0 +1,119 @@
+<%- include("../partials/header"); -%>
+<br />
+<br />
+<br />
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Add a gray background color with some padding */
+      body {
+        font-family: Arial;
+        padding: 20px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 200px;
+        padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>INCHARGE (R&D)'S MESSAGE</h2>
+          <!-- <h5>Title description, Dec 7, 2017</h5> -->
+          <div class="fakeimg" style="height: 200px;">Image</div>
+          <p>
+            We at SR Group of Institutions, Jhansi impart knowledge in a very
+            conducive academic environment not only to make our young aspiring
+            students competent but also motivate professionals who intend
+            reaching out to the world.
+          </p>
+          <p>
+            The Institute has a Research and Development cell with an objective
+            to promote research activities among the faculty members to achieve
+            academic excellence. In our endeavour to make our system effective
+            and sensitive to the requirements of all the stake holders, we
+            undertake collaboration with the industry to foster engineering
+            research which is an integral part of quality education.
+          </p>
+          <br />
+          <br />
+          <br />
+          <p>
+            We conduct research-oriented workshops, seminars and development
+            programmes to augment the quality of research being conducted by
+            various faculty of SRGI. The cell provides consistent and frequent
+            support to the final year students in preparing their projects
+            successfully and to be compatible for real time applications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<%- include("../partials/footer"); -%>

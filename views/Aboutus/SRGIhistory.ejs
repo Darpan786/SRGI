@@ -1,0 +1,145 @@
+<%- include("../partials/header"); -%>
+<br />
+<br />
+<br />
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Add a gray background color with some padding */
+      body {
+        font-family: Arial;
+        padding: 20px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+        /* background-image: url("https://firebasestorage.googleapis.com/v0/b/covid-25b82.appspot.com/o/history.jpg?alt=media&token=88d476b1-ec39-4104-b492-8cad3f81cd7a"); */
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Dec 7, 2017</h5>
+          <div
+            class="fakeimg"
+            img
+            src="https://firebasestorage.googleapis.com/v0/b/covid-25b82.appspot.com/o/history.jpg?alt=media&token=88d476b1-ec39-4104-b492-8cad3f81cd7a"
+            style="height: 200px;"
+          >
+            Image
+          </div>
+          <p>
+            SR Group of Institutions, established in 2002, is an important
+            landmark in the educational map of northern India. Approved by All
+            India Council of Technical Education and affiliated to Uttar Pradesh
+            Technical University, the largest technical university of India to
+            affiliate engineering and management colleges.
+          </p>
+          <p>
+            SRGI, currently running six colleges, College of Science &
+            Engineering, College of Pharmacy, College of Engineering Management
+            & Technology, College of Professional Studies, College of LAW and SR
+            College of polytechinc. All Institutes are well developed with
+            modern infrastructure and advanced laboratories and workshops.
+          </p>
+        
+        
+          <p>
+            The group offers various courses like B. Tech (CS, EC, EE, ME & CE),
+            B. Pharm, B.Sc. (Hons), BBA, BCA, MBA , MCA, M. Tech (CS, EC, ME &
+            CE), LAW & Polytechnic.
+          </p>
+          <p>
+            An outstanding sprawling green 80 acres of campus, passable number
+            of sports fields, a well-planned beautiful lake, a modern cafeteria,
+            state-of-the-art labs, huge online library and a totally Wi-Fi
+            environment are the physical features of this college. Proper living
+            arrangement is an important part of academic success. Keeping this
+            in mind, the Institute has five separate, spacious and aesthetically
+            designed hostels for boys and girls. An Amphitheatre & Auditorium
+            are in the making, with many more new projects in the pipeline.
+            Rapid growth and development are synonymous with the group. The
+            campus is an inspirational place to study, where students are
+            encouraged and supported to reach their highest possible potential
+            through the rich curriculum designed to suit their aspirations and
+            strengths. We maintain a high standard of education and continuously
+            strive to create a conducive environment for learning in order to
+            promote great career. We believe in the process of reshaping the
+            attitude of students and giving them the opportunity to explore and
+            rediscover themselves.
+          </p>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </body>
+</html>
+
+<%- include("../partials/footer"); -%>

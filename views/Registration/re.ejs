@@ -1,0 +1,269 @@
+<%- include("../partials/header"); -%>
+<br />
+<br />
+<br />
+<br />
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        font-family: "Source Sans Pro", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .not-valid {
+        background-color: #de606030;
+      }
+      #info {
+        font-weight: bold;
+        color: red;
+      }
+      form div {
+        text-align: left;
+        margin: 5px 3px;
+        font-size: 22px;
+      }
+
+      body {
+        background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+      }
+
+      input[type="radio"] {
+        margin: 4px 0px 20px -105px;
+      }
+
+      .gend {
+        display: flex;
+        margin-left: 64px;
+      }
+
+      .dgend {
+        text-align: center;
+        margin: -5px 56px 5px 4px;
+      }
+
+      input[type="date"] {
+        font-size: 16px;
+        color: #252e387a;
+      }
+
+      input::placeholder {
+        font-size: 16px;
+        color: #252e387a;
+      }
+
+      form {
+        position: relative;
+        width: 365px;
+        height: 100%;
+        margin: 50px auto 100px;
+        text-align: center;
+        background: #eeeeef;
+        padding: 40px;
+        -webkit-border-radius: 40px 0 0 0;
+        -moz-border-radius: 40px 0 0 0;
+        border-radius: 50px 7px 50px 7px;
+        box-shadow: -9px -11px 0px 2px #eef1fb38,
+          inset 10px 7px 0px 0px #a3a7b1f2;
+      }
+
+      h4 {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 2em;
+        font-weight: 300;
+        margin: -24px 13px 12px 12px;
+        color: #7f8c8d;
+        text-shadow: 1px 1px 0px white;
+      }
+
+      input {
+        display: block;
+        width: 315px;
+        padding: 14px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        border: 0;
+        margin-bottom: 20px;
+        color: #7f8c8d;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      input:focus {
+        background: #fafafa;
+      }
+
+      .button {
+        position: relative;
+        float: left;
+        width: 145px;
+        margin-top: 10px;
+        background: #507492;
+        color: #fff;
+        font-weight: 400;
+        text-shadow: 1px 1px 0px #2d7baf;
+        box-shadow: -7px -6px 0px #9c9c9cc4;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        outline: none;
+      }
+      input {
+        display: block;
+        width: 315px;
+        padding: 14px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        border: 0;
+        margin-bottom: 20px;
+        color: #7f8c8d;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      .button:hover {
+        background-color: #3a5e7bdb;
+        border-bottom-right-radius: 32%;
+        border-bottom-left-radius: 32%;
+      }
+
+      input [type="checkbox"] {
+        width: 10px;
+      }
+
+      .button {
+        cursor: pointer;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="POST" name="main_form">
+      <h4>Registration info</h4>
+      <div><label for="username">Full Name</label></div>
+      <input
+        name="name"
+        id="username"
+        type="text"
+        placeholder="Enter name"
+        maxlength="50"
+        autocomplete="off"
+        required
+      />
+      <div><label for="userLastname">Mobile Number</label></div>
+      <input
+        name="mobile_no"
+        id="userLastname"
+        type="tel"
+        placeholder="Enter Phone number"
+        autocomplete="off"
+        required
+      />
+
+      <div><label for="userbday">Date of Birthday</label></div>
+      <input
+        type="date"
+        name="birthday"
+        id="userbday"
+        min="1899-01-01"
+        title="Wrong min date"
+        autocomplete="off"
+        required
+      />
+      <div><label for="useremail">Email Address</label></div>
+      <input
+        name="email"
+        id="useremail"
+        type="email"
+        placeholder="Enter email"
+        maxlength="50"
+        autocomplete="off"
+        required
+      />
+      <div><label for="userPass">Whatsapp Number 📱 </label></div>
+      <input
+        name="whatsapp"
+        id="userPass"
+        type="tel"
+        placeholder="Enter whatsapp number"
+        maxlength="20"
+        pattern=".{6,20}"
+        title="6 to 20 characters"
+        autocomplete="off"
+        required
+      />
+      <div>
+        <label for="userConfirmPass">Course</label>
+
+        <select id="Covid_test_result" name="course">
+          <option value="Btech">Btech</option>
+          <option value="Polytechnic">Polytechnic</option>
+          <option value="Pharmacy">Pharmacy</option>
+          <option value="Mtech">Mtech</option>
+          <option value="MCA">MCA</option>
+          <option value="MBA">MBA</option>
+          <option value="BCA">BCA</option>
+          <option value="BBA">BBA</option>
+          <option value="BSCAGRICULTURE">BSC AGRICULTURE</option>
+          <option value="BIOTECH">BIO TECH</option>
+          <option value="BSC(H)FOOD TECHNOLOGY">BSC FOOD TECHNOLOGY</option>
+          <option value="LAW">LAW</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="userConfirmPass">How do you come to know about SRGI </label>
+
+        <select id="Covid_test_result" name="come">
+          <option value="Newspaper">Newspaper</option>
+          <option value="Hoardings">Hoardings</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Website">Website</option>
+          <option value="Through">Through Friends</option>
+        </select>
+      </div>
+
+      <input class="button" type="submit" value="Send" name="submit" />
+    </form>
+    <script>
+      window.onload = function () {
+        let form = document.main_form;
+        let info = document.getElementById("info");
+        let name = form.name;
+        let lastname = form.lastname;
+        let surname = form.surname;
+        let gender = form.gender;
+        let date = form.birthday;
+        let email = form.email;
+        let password = form.password;
+        let confirmPassword = form.confirmPassword;
+
+        form.addEventListener("submit", formValidation);
+        function formValidation() {
+          let wrongFields = false;
+          for (let i = 0; i < form.length; i++) {
+            if (form[i].value == "" && form[i].type != "radio") {
+              form[i].classList.add("not-valid");
+              wrongFields = true;
+            } else form[i].classList.remove("not-valid");
+          }
+          if (form.password.value != form.confirmPassword.value) {
+            info.innerHTML = "Passwords is not same";
+            event.preventDefault();
+          } else info.innerHTML = "";
+          if (!wrongFields) alert("Thanks for registration");
+          else event.preventDefault();
+        }
+        for (let i = 0; i < form.length; i++) {
+          form[i].onchange = function () {
+            if (this.value != "") this.classList.remove("not-valid");
+          };
+        }
+      };
+    </script>
+  </body>
+</html>

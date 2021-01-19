@@ -1,0 +1,146 @@
+<%- include("../partials/header"); -%>
+<br />
+<br />
+<br />
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Add a gray background color with some padding */
+      body {
+        font-family: Arial;
+        padding: 20px;
+        background: #f1f1f1;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 200px;
+        padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Chairman’s Message</h2>
+          <!-- <h5>Title description, Dec 7, 2017</h5> -->
+          <div class="fakeimg" style="height: 200px;">Image</div>
+          <p>
+            Founded in the year 2002, SRGI is both large in size and reputation.
+            We have demonstrated impressive performance on account of almost all
+            parameters. Placement and employability are key focus in our
+            training process.
+          </p>
+          <p>
+            Key factors in our growth have been superior quality students’
+            intake, high quality career and placement, technology drivers and
+            culture. At SRGI, perspective on learning is different. As an
+            institute we recognize that professional education is about thinking
+            and doing.An important element of our learning is how you learn to
+            drive yourself and deliver .
+          </p>
+        </div>
+        <div class="card">
+          <h2>Vice-Chairperson Message</h2>
+          <!-- <h5>Title description, Sep 2, 2017</h5> -->
+          <div class="fakeimg" style="height: 200px;">Image</div>
+          <p>
+            SRGI-a unique benchmark in itself; since the very beginning, the
+            flagship was retained in the hands of trained & experienced
+            management & faculty. The group is a yardstick in the educational
+            area of U.P. which others have followed.
+          </p>
+          <p>
+            Past 11 years, campus charter, indicates a flood of academic,
+            cultural & sports activities. Some landmarks achieved by SRGI
+            include the concept of promoting research work, vision & realization
+            of holding campus placement activity for students, Collaboration of
+            the Group with leading companies for the post-placement training
+            activities, run for the NBA.
+          </p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About</h2>
+
+          <p>
+            In addition to giving conventional inputs, we try to develop the
+            mindset and attitudes that are required in today’s business
+            environment. Through our value-based education, we make our students
+            responsive to societal issues. SRGI possesses a vibrant and talented
+            community of students who are actively involved in various
+            conferences, seminars, workshops, group activities, competitions and
+            cultural events. In this process, they learn to effectively handle
+            group dynamics and interpersonal relationships. With diverse
+            thinking processes, they take decisions while working in teams with
+            mutual respect.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<%- include("../partials/footer"); -%>
